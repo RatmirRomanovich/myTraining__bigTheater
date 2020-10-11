@@ -1,0 +1,41 @@
+.header {
+	grid-area: header;
+	background: rgb(190, 102, 102);
+	display: grid;
+	grid-template: 1fr / 1fr minmax(auto, 824px) minmax(auto, 286px) 1fr;	
+	align-items: center;
+
+	// .header__menu
+
+	&__menu {
+		grid-column: 2/3;
+		background: green;
+		padding: 20px;
+	}
+
+	// .header__list
+
+	&__list {
+		display: grid;
+		grid-auto-flow: column;
+		justify-items: start;
+	}
+
+	// .header__link
+
+	&__link {}
+
+	// .header__burger-menu
+
+	&__burger-menu {
+		display: none;
+	}
+
+	// .header__phone
+
+	&__phone {
+		padding: 20px;
+		grid-column: 3/4;
+		background: yellowgreen;
+	}
+}
