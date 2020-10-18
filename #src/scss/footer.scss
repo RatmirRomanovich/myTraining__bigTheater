@@ -1,4 +1,40 @@
 .footer {
 	grid-area: footer;
-	background: blueviolet;
+
+}
+
+.footer {
+
+	// .footer__container
+
+	&__container {
+		width: 100%;
+		max-width: 1100px;
+		margin: 0px auto;
+		border-top: 1px solid #565656;
+		color: white;
+	}
+
+	// .footer__copy
+
+	&__copy {
+		display: grid;
+		grid-template: minmax(80px, auto) / 1fr 1fr;
+		align-items: center;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 150%;
+		color: #989898;
+	}
+
+	// .footer__text
+
+	&__text {}
+
+
+	// .footer__span
+
+	&__span {
+		justify-self: end;
+	}
 }

@@ -1,0 +1,170 @@
+.performances {
+	background: #333333;
+	padding-bottom: 150px;
+	max-width: 100vw;
+	overflow: hidden;
+	// .performances__title
+
+	&__title {
+		width: 100%;
+		padding: 0px 33px;
+		text-align: center;
+		margin-bottom: 100px;
+	}
+}
+
+.performances {
+
+	// .performances__items
+
+	&__items {
+		cursor: pointer;
+	}
+
+	// .performances__slider-container
+
+	&__slider-container {
+		margin: 0px 30px 0px 150px;
+	}
+
+	// .performances__item
+
+	&__item {
+		position: relative;
+		top: 0px;
+		left: 0px;
+		height: 550px;
+		& img {
+			width: 100%;
+			height: 550px;
+		}
+		&:hover .performances__text,
+		&:hover .performances__span {
+			display: none;
+		}
+		&:hover .performances__form {
+			display: block;
+		}
+	}
+
+	// .performances__poster
+
+	&__poster {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 550px;
+
+		& img{
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	// .performances__text
+
+	&__text {
+		position: absolute;
+		min-width: 100%;
+		height: 550px;
+		top: 0px;
+		left: 0px;
+		z-index: 2;
+		background: rgba(51, 51, 51, 0.657);
+	}
+
+	// .performances__span
+
+	&__span {
+		display: inline-block;
+		font-family: "Open Sans Condensed";
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 33px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+
+
+		// .performances__span_top
+
+		&_top {
+			position: absolute;
+			top: 40px;
+			left: 40px;
+		}
+
+		// .performances__span_bottom
+
+		&_bottom {
+			position: absolute;
+			bottom: 95px;
+			left: -10px;
+			transform: rotate(-90deg);
+			font-size: 18px;
+			line-height: 25px;
+			letter-spacing: 0.1em;
+		}
+	}
+
+	// .performances__form
+
+	&__form {
+		display: none;
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		bottom: 0px;
+		right: 0px;
+		margin: auto;
+		background: #D1A954;
+		border-radius: 50%;
+		&:hover {
+			background: #dab055;
+		}
+
+	}
+
+	// .performances__button
+
+	&__button {
+		margin: 35px 35px 35px 35px;
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		background: url('/img/slider/form.png') center / contain no-repeat;
+	}
+}
+
+
+
+
+
+
+.swiper-container {}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.swiper-scrollbar {}
+
+
+
+
+
+.swiper-container {
+	width: 1920px;
+}
+
+.swiper-wrapper {
+
+}
+
+.swiper-slide {}
+
+.swiper-scrollbar {}
+
+.performances__item {}
