@@ -85,30 +85,11 @@
 }
 
 .poster {
+	cursor: pointer;
 	// .poster__container
 
 	&__container {}
 
-	// .poster__slider
-
-	&__slider {
-		position: relative;
-		width: 370px;
-		height: 510px;
-
-		& .poster__slider_top {
-			position: absolute;
-			top: 0px;
-			left: 0px;
-			z-index: 2;
-		}
-
-		& .poster__slider_bottom {
-			position: absolute;
-			bottom: 0px;
-			right: 0px;
-		}
-	}
 
 	// .poster__control
 
@@ -147,6 +128,7 @@
 			& svg {
 				fill: #C4C4C4;
 			}
+
 			& .span__prev {
 				color: #C4C4C4;
 			}
@@ -173,6 +155,7 @@
 			& svg {
 				fill: #C4C4C4;
 			}
+
 			& .span__next {
 				color: #C4C4C4;
 			}
@@ -180,15 +163,53 @@
 	}
 }
 
-.span {
 
-	// .span__prev
+/* slider */
+.poster {
 
-	&__prev {}
+	// .poster__slider
 
-	// .span__next
+	&__slider {
+		position: relative;
+		width: 370px;
+		height: 510px;
 
-	&__next {}
+		& .poster__slider_top {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 2;
+		}
+
+		& .poster__slider_bottom {
+			position: absolute;
+			bottom: 0px;
+			right: 0px;
+		}
+	}
 }
+
+.swiper-containerHome {
+	margin: 0 auto;
+	width: 370px;
+	height: 510px;
+	overflow: hidden;
+}
+
+.swiper-wrapper {
+
+}
+
+.swiper-slide {
+	position: relative;
+}
+
+.swiper-pagination {}
+
+.swiper-button-prev {}
+
+.swiper-button-next {}
+
+/* slider */
 
 //<section__home>=========================================================================================================

@@ -1,1 +1,1 @@
-//@prepros-append performancesSlider.js
+//@prepros-append slider.js

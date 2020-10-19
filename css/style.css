@@ -343,21 +343,8 @@ body {
   background-color: #D1A954;
 }
 
-.poster__slider {
-  position: relative;
-  width: 370px;
-  height: 510px;
-}
-.poster__slider .poster__slider_top {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 2;
-}
-.poster__slider .poster__slider_bottom {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
+.poster {
+  cursor: pointer;
 }
 .poster__control {
   display: -ms-grid;
@@ -424,6 +411,36 @@ body {
   color: #C4C4C4;
 }
 
+/* slider */
+.poster__slider {
+  position: relative;
+  width: 370px;
+  height: 510px;
+}
+.poster__slider .poster__slider_top {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+.poster__slider .poster__slider_bottom {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.swiper-containerHome {
+  margin: 0 auto;
+  width: 370px;
+  height: 510px;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+/* slider */
 .section-description {
   background: #333333;
 }
