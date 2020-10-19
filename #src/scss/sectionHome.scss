@@ -5,9 +5,10 @@
 	min-height: 100vh;
 	background: url("../../img/sectionHome/Rectanglemin.jpg") center / cover no-repeat;
 	display: grid;
-	grid-template: 1fr / 1fr minmax(auto, 1110px) 1fr;
+	grid-template: 1fr / minmax(191px, 1fr) minmax(auto, 1110px) 1fr;
 	align-items: center;
 	padding: 0px 15px;
+	
 	// .section-home__container
 
 	&__container {
@@ -15,6 +16,10 @@
 		display: grid;
 		grid-template: 1fr / minmax(510px, 540px) minmax(auto, 125px) 370px minmax(auto, 75px);
 		align-items: center;
+		@media (max-width: 1250px) {
+			grid-template: 1fr / minmax(510px, 540px) 1fr;
+		}
+		
 	}
 
 	// .section-home__content
@@ -86,6 +91,9 @@
 
 .poster {
 	cursor: pointer;
+	@media (max-width: 1250px) {
+		display: none;
+	}
 	// .poster__container
 
 	&__container {}
