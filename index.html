@@ -14,20 +14,41 @@
 <!-- HEADER -->
 <header class="header">
 	<div class="header__column">
-		<div class="header__items">
-			<nav class="header__menu">
-				<ul class="header__list">
-					<li><a href="#1" class="header__link header__link_hover js_scroll">Главная</a></li>
-					<li><a href="#2" class="header__link header__link_hover js_scroll">о театре</a></li>
-					<li><a href="#3" class="header__link header__link_hover js_scroll">Наши постановки</a></li>
-					<li><a href="#4" class="header__link header__link_hover js_scroll">партнеры театра</a></li>
-					<li><a href="#5" class="header__link header__link_hover js_scroll">контакты</a></li>
-				</ul>
-				<div class="header__burger-menu">
-					<span></span>
-					<span></span>
-					<span></span>
+
+		<!--TODO заготовка под бургер-->
+		<div class="icon-menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
+		<!--TODO / заготовка под бургер-->
+
+		<div class="header__menu menu">
+
+			<nav class="menu__body inner">
+				<div class="inner__close menu__close"><span></span><span></span></div>
+				<!-- место для списка -->
+				<div class="inner__icons">
+					<a href="#" class="inner__icon-link inner__icon-link_facebook"><img src="img/header/Vector.png" alt="icon"></a>
+					<a href="#" class="inner__icon-link inner__icon-link_instagram"><img src="img/header/instagram.png" alt="icon"></a>
+					<a href="#" class="inner__icon-link inner__icon-link_youtube"><img src="img/header/youtube.png" alt="icon"></a>
+					<a href="#" class="inner__icon-link inner__icon-link_vk"><img src="img/header/vk.png" alt="icon"></a>
 				</div>
+				
+			</nav>
+		</div>
+
+
+		<div class="header__items">
+			<nav class="header__nav">
+				<ul class="header__list menu__list inner__list" data-da="menu__body,1,992">
+					<li><a href="#1" class="header__link header__link_hover menu__close">Главная</a></li>
+					<li><a href="#2" class="header__link header__link_hover menu__close">о театре</a></li>
+					<li><a href="#3" class="header__link header__link_hover menu__close">Наши постановки</a></li>
+					<li><a href="#4" class="header__link header__link_hover menu__close">партнеры театра</a></li>
+					<li><a href="#5" class="header__link header__link_hover menu__close">контакты</a></li>
+				</ul>
 			</nav>
 
 			
@@ -318,10 +339,10 @@
 
 	<div class="sponsorship__container">
 		<div class="sponsorship__contact">
-			<a href="tel:+78121234555" class="sponsorship__link"><span class="sponsorship__span">+7 (812) 123-45-55</span></a>
-			<a href="tel:+78121234566" class="sponsorship__link"><span class="sponsorship__span">+7 (812) 123-45-66</span></a>
-			<a href="#!" class="sponsorship__link"><span class="sponsorship__span">info@theater.ru</span></a>
-			<a href="#!" class="sponsorship__link"><span class="sponsorship__span">г. санкт-петербург, невский 140</span></a>
+			<a href="tel:+78121234555" class="sponsorship__link sponsorship__link-phone1"><span class="sponsorship__span">+7 (812) 123-45-55</span></a>
+			<a href="tel:+78121234566" class="sponsorship__link sponsorship__link-phone2"><span class="sponsorship__span">+7 (812) 123-45-66</span></a>
+			<a href="#!" class="sponsorship__link sponsorship__link-email"><span class="sponsorship__span">info@theater.ru</span></a>
+			<a href="#!" class="sponsorship__link sponsorship__link-address"><span class="sponsorship__span">г. санкт-петербург, невский 140</span></a>
 		</div>
 
 		<div class="sponsorship__connection">

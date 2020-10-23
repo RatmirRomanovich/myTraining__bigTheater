@@ -1,11 +1,12 @@
 .placard {
 	background: #333;
-	padding-bottom: 150px;
+	padding:0px 33px 150px 33px;
+	max-width: 100%;
 
 	&__container {
 		width: 100%;
 		max-width: 1100px;
-		height: 550px;
+		height: 540px;
 		margin: 0 auto;
 		background: url('/img/postermin.jpg') center / cover no-repeat;
 		display: grid;
