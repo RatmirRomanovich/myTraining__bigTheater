@@ -9,10 +9,18 @@
 	&__container {
 		width: 100%;
 		max-width: 1100px;
-		margin: 0 auto;
+		margin: 0px auto;
 		padding-bottom: 120px;
-		@media (max-width: 1250px) {
+
+		@media (min-width: 1450px) {
+			margin: 0px auto;
+		}
+		@media (max-width: 1321px) {
 			max-width: 680px;
+			overflow: hidden;
+		}
+		@media (max-width: 768px) {
+			max-width: 510px;
 			overflow: hidden;
 		}
 	}
@@ -22,15 +30,27 @@
 	&__title {
 		text-align: center;
 		padding-bottom: 100px;
+		@media (max-width: 767px) {
+			margin: 0px auto;
+			max-width: 510px;
+		}
 	}
 
 	// .partnership__items
 
 	&__items {
 		display: grid;
-		grid-template: 100px / repeat(4, 200px);
-		grid-auto-rows: 100px;
+		grid-template: 100px / repeat(4, 227px);
 		gap: 75px;
+		@media (min-width: 767px) {
+			grid-auto-rows: 100px;
+		}
+		@media (max-width: 767px) {
+			grid-template: 100px 100px/ 227px 227px;
+			height: 275px;
+			overflow: hidden;
+			justify-content: start;
+		}
 	}
 
 	// .partnership__item

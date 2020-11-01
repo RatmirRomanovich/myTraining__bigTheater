@@ -24,8 +24,9 @@
 		grid-template: 1fr / minmax(510px, 540px) minmax(auto, 125px) 370px minmax(auto, 75px);
 		align-items: center;
 		margin: 0px 33px;
+		padding-bottom: 50px;
 		@media (max-width: 1250px) {
-			grid-template: 1fr / minmax(510px, 540px);
+			grid-template: 1fr / minmax(512px, 540px);
 		}
 		@media (max-width: 850px) {
 			grid-column: 1/2;
@@ -209,24 +210,15 @@
 
 .swiper-containerHome {
 	margin: 0 auto;
-	width: 370px;
+	width: 368px;
 	height: 510px;
 	overflow: hidden;
-}
-
-.swiper-wrapper {
-
 }
 
 .swiper-slide {
 	position: relative;
 }
 
-.swiper-pagination {}
-
-.swiper-button-prev {}
-
-.swiper-button-next {}
 
 /* slider */
 

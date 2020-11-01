@@ -2,6 +2,14 @@
 
 .sponsorship {
 	margin-bottom: 80px;
+	@media (min-width: 1250px) {
+		margin: 0px auto 80px 191px;
+	}
+	@media (max-width: 845px) {
+		width: 100%;
+		max-width: 510px;
+		margin: 0px auto 60px;
+	}
 	// .sponsorship__title
 
 	&__title {
@@ -23,10 +31,15 @@
 		column-gap: 125px;
 		justify-content: center;
 
-		@media (max-width: 1250px) {
+		@media (max-width: 1321px) {
 			column-gap: 0px;
 			row-gap: 80px;
 			grid-template: 1fr minmax(50px, auto) / 720px;
+		}
+
+		@media (max-width: 845px) {
+			grid-template: 1fr minmax(50px, auto) / 509px;
+			row-gap: 50px;
 		}
 	}
 
@@ -38,6 +51,11 @@
 			display: grid;
 			grid-template: 1fr 1fr / 360px 360px;
 		}
+
+		@media (max-width: 845px) {
+			grid-template: 1fr 1fr / 150px 359px;
+		}
+
 	}
 
 	// .sponsorship__link
@@ -69,6 +87,12 @@
 	// .sponsorship__form
 
 	&__form {
+			@media (max-width: 845px) {
+		grid-template: 35px 35px 100px 50px 50px/ 230px 230px;
+		row-gap: 30px;
+		column-gap: 50px;
+		margin: 0px auto;
+	}
 		display: grid;
 		grid-template: 35px 35px 70px / 180px 180px 310px;
 		gap: 30px;
@@ -123,6 +147,11 @@
 	// .form__messages
 
 	&__messages {
+		@media (max-width: 845px) {
+			grid-row: 3/4;
+			grid-column: 1/3;
+			margin-bottom: 10px;
+		}
 		grid-row: 1/3;
 		grid-column: 3/4;
 
@@ -138,6 +167,11 @@
 	// .form__text
 
 	&__text {
+		@media (max-width: 845px) {
+			grid-row: 5/6;
+			grid-column: 1/3;
+			text-align: center;
+		}
 		margin-top: 10px;
 		grid-row: 3/4;
 		grid-column: 1/3;
@@ -150,6 +184,11 @@
 	// .form__button
 
 	&__button {
+		@media (max-width: 845px) {
+			justify-self: center;
+			grid-row: 4/5;
+			grid-column: 1/3;
+		}
 		margin-top: 10px;
 		grid-row: 3/4;
 		grid-column: 3/4;

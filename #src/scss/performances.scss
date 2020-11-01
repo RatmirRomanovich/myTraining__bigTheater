@@ -1,8 +1,13 @@
 .performances {
 	background: #333333;
 	padding-bottom: 150px;
+	width: 100%;
 	max-width: 100vw;
 	overflow: hidden;
+	@media (max-width: 568px) {
+		min-width: 509px;
+		margin: 0 auto;
+	}
 	@media (min-width: 992px) {
 		margin-left: 40px;
 	}
@@ -145,33 +150,10 @@
 	}
 }
 
-
-
-
-
-
-.swiper-container {}
-
-.swiper-wrapper {}
-
-.swiper-slide {}
-
-.swiper-scrollbar {}
-
-
-
-
-
 .swiper-container {
 	max-width: 100vw;
+	@media (max-width: 568px) {
+		width: 100%;
+		max-width: 509px;
+	}
 }
-
-.swiper-wrapper {
-
-}
-
-.swiper-slide {}
-
-.swiper-scrollbar {}
-
-.performances__item {}
